@@ -16,7 +16,7 @@ function App() {
     setError("");
 
     try {
-      const response = await axios.get(`https://weather-backend-neon.vercel.app/api/search?query=${query}`);
+      const response = await axios.get(`https://weather-backend-neon.vercel.app/api/movie/${id}`);
       if (response.data.Search) {
         setMovies(response.data.Search);
       } else {
